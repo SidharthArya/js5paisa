@@ -142,20 +142,20 @@ class p5 {
     }
 }
 
-const main = async () => {
-  const creds = await credentials.getCreds();
-  const c = new p5(creds);
-  await c.login();
-  req_list= []
-  await c._user_info_request("MARGIN");
-  // await c.fetch_market_feed(req_list);
-}
-
-function main_p() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(main());
-        }, 1000);
-    });
-}
-main_p()
+// const main = async () => {
+//   const creds = await credentials.getCreds();
+//   const c = new p5(creds);
+//   await c.login();
+//   req_list= []
+//   await c._user_info_request("MARGIN");
+//   // await c.fetch_market_feed(req_list);
+// }
+// 
+// function main_p() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve(main());
+//         }, 1000);
+//     });
+// }
+// main_p()
